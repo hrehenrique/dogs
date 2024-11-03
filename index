@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cachorros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+    <script src="https://unpkg.com/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+    <h1>Cadastro de Cachorros</h1>
+    <form id="dogForm">
+        <input type="text" id="name" placeholder="Nome do cachorro" required>
+        <input type="text" id="address" placeholder="Endereço" required>
+        <input type="text" id="vaccines" placeholder="Vacinas" required>
+        <input type="text" id="owner" placeholder="Nome do dono" required>
+        <input type="file" id="photo" accept="image/*" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <div id="qrCode"></div>
+    <script src="script.js"></script>
+</body>
+</html>
